@@ -96,7 +96,7 @@
 }
 
 .image__filter-multiple {
-  filter: hue-rotate(250%), saturate(250%),opacity(250%);
+  filter: hue-rotate(250%) saturate(250%) opacity(250%);
 }
 
 .conten__list {
