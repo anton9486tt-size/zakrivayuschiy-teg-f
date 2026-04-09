@@ -3,12 +3,14 @@
 Вы можете изменять этот файл или дополнять. Но скорее всего, вам это не потребуется. */
 
 *,
-*::after,
-*::before {
+*::before,
+*::after {
   box-sizing: border-box;
 }
 
 body {
+  min-inline-size: 375px;
+  max-inline-size: 1440px;
   margin: 0;
 }
 
@@ -21,7 +23,10 @@ h6,
 p,
 ul,
 ol,
-li {
+li,
+button,
+input,
+image {
   margin: 0;
   padding: 0;
 }
