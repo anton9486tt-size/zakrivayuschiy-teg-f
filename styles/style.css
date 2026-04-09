@@ -19,7 +19,7 @@
   justify-self: center;
   flex-direction: column;
   align-items: center;
-  font-variation-settings: "weight" 410;
+  font-variation-settings: "wght" var(--basic-weight);
 }
 
 .header {
@@ -74,11 +74,11 @@
 }
 
 .image__filter-blur {
-  filter: blur(250%);
+  filter: blur(4px);
 }
 
 .image__filter-opacity {
-  filter: opacity(250%);
+  filter: opacity(60%);
 }
 
 .image__filter-grayscale {
@@ -90,7 +90,7 @@
 }
 
 .image__filter-multiple {
-  filter: hue-rotate(250%) saturate(250%) opacity(250%);
+  filter: hue-rotate(50deg) saturate(60%) opacity(60%);
 }
 
 .conten__list {
