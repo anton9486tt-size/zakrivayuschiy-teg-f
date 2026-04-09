@@ -19,9 +19,7 @@
   justify-self: center;
   flex-direction: column;
   align-items: center;
-  font-variation-settings:
-    715 1.125rem/100% "Inter",
-    sans-serif;
+  font-variation-settings: "weight" 410;
 }
 
 .header {
@@ -65,10 +63,6 @@
   display: flex;
   flex-direction: column;
   gap: 50px;
-}
-
-.image__filter-none {
-  filter: none;
 }
 
 .image__filter-brightness {
@@ -406,7 +400,7 @@
   .dialog__content {
     padding-inline-start: 30px;
   }
-  
+
   .dialog[open] {
     inline-size: 341px;
     overflow: hidden;
