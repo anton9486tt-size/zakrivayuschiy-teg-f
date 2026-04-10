@@ -16,7 +16,8 @@
       transparent 4px
     ),
     linear-gradient(180deg, #e7e7e7 0%, #e7e7e7 0.01%, #1a1a1a 100%);
-  --family-press: "PressStart2P", sans-serif;
+  --family-press: "PressStart2P", fantasy;
+  --family-inter: "Inter-Variable", sans-serif;
   --inline-size: clamp(23.4375rem, 16.2852rem + 30.5164vw, 43.75rem);
   --header-block-size: clamp(20.4375rem, 19.5352rem + 3.8498vw, 23rem);
   --border-content: 2px solid #000;
@@ -25,4 +26,5 @@
   --main-color: #fff;
   --accent-color: rgba(0, 0, 0, 1);
   --basic-weight: 410;
+  --bold-weight: 715;
 }

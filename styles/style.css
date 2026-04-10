@@ -47,19 +47,19 @@
   gap: 20px;
 }
 
-.header__title {
+.header__decor__title {
   font-family: var(--family-press);
   font-size: clamp(3.0625rem, 2.7104rem + 1.5023vw, 4.0625rem);
   text-transform: uppercase;
 }
 
-.header__subtitle {
+.header__title {
   text-transform: uppercase;
   font-family: var(--family-press);
   font-size: clamp(0.875rem, 0.6769rem + 0.8451vw, 1.4375rem);
 }
 
-.main {
+.content {
   display: flex;
   flex-direction: column;
   gap: 50px;
@@ -101,20 +101,21 @@
   border: var(--border-content);
 }
 
-.list__card__title {
+.card__title {
   display: flex;
   flex-direction: column;
   border-block-end: var(--border-content);
   padding: 6px 10px;
 }
 
-.card__title {
-  font:
-    715 1.125rem/100% "Inter",
-    sans-serif;
+.title {
+  font-family: var(--family-inter);
+  font-variation-settings: "wght" var(--bold-weight);
+  line-height: 100%;
+  font-size: 18px;
 }
 
-.list__image {
+.container__image {
   position: relative;
 }
 
@@ -145,13 +146,14 @@
 }
 
 @supports ((text-stroke: 1px #fff) or (-webkit-text-stroke: 1px #fff)) {
-  .laybel::after {
+  .laybel {
     -webkit-text-stroke: 1px rgba(255, 255, 255, 0.5);
+    /*text-stroke: 1px rgba(255, 255, 255, 0.5);*/
     text-shadow: none;
   }
 }
 
-.list__card {
+.content__card {
   display: flex;
   flex-direction: column;
   gap: 25px;
@@ -160,9 +162,10 @@
 }
 
 .card__text {
-  font:
-    410 1.125rem/21px "Inter",
-    sans-serif;
+  font-family: var(--family-inter);
+  font-size: 18px;
+  font-variation-settings: "wght" var(--basic-weight);
+  line-height: 21px;
 }
 
 .container__button {
@@ -185,7 +188,7 @@
   border: var(--border-content);
   font:
     400 0.875rem/90% "PressStart2P",
-    sans-serif;
+    fantasy;
 }
 
 .like-icon {
@@ -193,7 +196,7 @@
 }
 
 .card__icon-button {
-  border: none;
+  border: 2px solid transparent;
   background-color: #fff;
   inline-size: 38px;
   block-size: 38px;
@@ -290,7 +293,7 @@
   position: relative;
   z-index: -1;
   color: var(--main-color);
-  font-family: var(--accent-font);
+  font-family: var(--family-press);
   font-size: 14px;
   line-height: 90%;
   mix-blend-mode: difference;
