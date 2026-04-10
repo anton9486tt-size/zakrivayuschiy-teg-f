@@ -59,6 +59,12 @@
   font-size: clamp(0.875rem, 0.6769rem + 0.8451vw, 1.4375rem);
 }
 
+.main {
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+}
+
 .content {
   display: flex;
   flex-direction: column;
